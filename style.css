@@ -1,3 +1,22 @@
+:root {
+  --font-sm : 1rem;
+  --font-med: 1.25rem;
+  --font-lg: 1.5rem;
+  --font-xl: 2rem;
+
+  --green: hsl(160deg, 100%, 30%);
+
+  --light-gold: hsl(45deg, 100%, 50%);
+  --dark-gold: hsl(45deg, 100%, 40%);
+
+  --black: hsl(0deg, 0%, 0%);
+  --very-dark: hsl(0deg, 0%, 10%);
+  --dark: hsl(0deg, 0%, 30%);
+  --medium-dark: hsl(0deg, 0%, 40%);
+  --light-gray: hsl(0deg, 0%, 60%);
+  --white: hsl(0deg, 0%, 100%);
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -10,3 +29,30 @@ body {
 }
 
 /* Add styles here! */
+main {
+  background-color: var(--light-gray);
+  border-top: var(--medium-dark) solid 8px;
+}
+
+strong {
+  color: var(--green);
+}
+
+.card {
+  background-color: var(--white);
+  padding: 24px;
+}
+
+.indented-heading {
+  background-color: var(--light-gold);
+  border-bottom: var(--dark-gold) 8px solid;
+
+  padding: 16px 24px;
+  width: fit-content;
+  margin: -16px 0 0 -32px;
+}
+
+.max-width-wrapper {
+  padding: 48px;
+}
+
