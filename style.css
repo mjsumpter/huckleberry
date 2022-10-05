@@ -28,10 +28,15 @@ body {
   padding: 0;
 }
 
+h1, h2, h3 {
+  margin: 0;
+}
+
 /* Add styles here! */
 main {
   background-color: var(--light-gray);
   border-top: var(--medium-dark) solid 8px;
+  padding: 96px 0;
 }
 
 strong {
@@ -40,19 +45,41 @@ strong {
 
 .card {
   background-color: var(--white);
+  margin: -24px;
   padding: 24px;
+}
+
+.card p {
+  font-size: var(--font-med);
+  line-height: 1.4;
 }
 
 .indented-heading {
   background-color: var(--light-gold);
   border-bottom: var(--dark-gold) 8px solid;
 
-  padding: 16px 24px;
-  width: fit-content;
   margin: -16px 0 0 -32px;
+  padding: 16px 32px;
+
+  width: fit-content;
+}
+
+.intro-chunk {
+  padding: 96px 0;
+  max-width: 400px;
+}
+
+.intro-chunk p {
+  font-size: var(--font-med);
+}
+
+.intro-chunk .title {
+  font-size: var(--font-xl);
+  margin-botton: 32px;
 }
 
 .max-width-wrapper {
-  padding: 48px;
+  padding: 0 48px;
+  margin: 0 auto;
 }
 
